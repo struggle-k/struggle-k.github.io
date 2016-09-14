@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	*{margin: 0;padding: 0}
+	div{
+		width: 100px;
+		height: 100px;
+		background: #ccc;
+		font-size: 50px;
+		text-align: center;
+		display: none;
+	}	
+	.select{
+		background: yellow;
+	}
+	</style>
+	<script type="text/javascript" src="jquery-3.0.0.min.js"></script>
+	<script type="text/javascript">
+	//ready
+	$(function() {
+		var $input = $("input");
+		var $div = $("div");
+		$input.on("click",function() {
+			// for (var i = 0; i < input.length; i++) {
+			// 	input[i].className=''
+			// }
+			// this.className="select"
+			$input.removeClass("select")
+			$(this).addClass("select")
+			// $div.css("display","none")
+			// $div.eq($(this).index()).css("display","block")
+			$div.hide(500);
+			$div.eq($(this).index().show(500);
+		})
+
+	})
+
+	</script>
+</head>
+<body>
+	<input type="button" value="按钮1">
+	<input type="button" value="按钮2">
+	<input type="button" value="按钮3">
+	<input type="button" value="按钮4">
+	<div style="display:block">1</div>
+	<div>2</div>
+	<div>3</div>
+	<div>4</div>
+</body>
+</html>
+
+
+
+
+
